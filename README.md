@@ -1,5 +1,5 @@
 # Self contained Spring-Boot Docker Image with Maven
-You can work with this project just as you would any other Spring Boot application.
+The purpose of this image is to be a base for Spring-Boot apps that are deployable to any system capable of hosting Docker. You can work with this project just as you would any other Spring Boot application.
 
 - Run tests with `mvn test`
 - Run maven commands
@@ -11,3 +11,7 @@ You can work with this project just as you would any other Spring Boot applicati
 ## Running the image as a container:
 - `docker run -p 8080:8080 -t <image_id>`
 - Access app at `localhost:8080`
+
+## How it works
+- On build, it places src dir and pom file in the docker image, and runs `mvn clean install`
+- On starting the image, the contained Spring-Boot app starts and binds to 8080.
