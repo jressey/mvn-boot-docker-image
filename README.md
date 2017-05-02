@@ -1,7 +1,7 @@
 # Self contained Spring-Boot Image with Maven
 
 ## Build the docker image
-`docker run -p 8080:8080 -t cfa/boot-docker`
+`docker build -t <image_name> .`
 
 ## Run the image as a container:
 `docker run -p 8080:8080 -t <image_id>`
