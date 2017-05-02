@@ -1,4 +1,4 @@
-# Self contained Spring-Boot Image with Maven
+# Self contained Spring-Boot Docker Image with Maven
 You can work with this project just as you would any other Spring Boot application.
 
 - Run tests with `mvn test`
